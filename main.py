@@ -10,7 +10,7 @@ def parallel_processing(n, m, data):
         start = numthread[thread]
         end = start + data[i]
 
-        numthread[numthread] = end
+        numthread[thread] = end
         nexthread = (nexthread + 1) % n
         output.append((thread, start))
 
