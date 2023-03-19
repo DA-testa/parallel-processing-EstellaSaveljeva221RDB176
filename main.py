@@ -5,8 +5,7 @@ def parallel_processing(n, m, data):
     nexthread = 0
     numthread = [0] * n
     for i in range(m):
-        nexthread=0
-        thread=nexthread
+        nexthread=nexthread
        
         start = numthread[nexthread]
         end = start + data[i]
