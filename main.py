@@ -9,26 +9,25 @@ def parallel_processing(n, m, data):
             for j in range (1,n):
                 if numthread[j]<numthread[nexthread]:
                     nextread = j
+                    
+        start = numthread[nexthread]
+        end = start + data[i]
+
+        numthread[numthread] = end
+        output.append((nexthread, start))
 
     return output
 
 def main():
-    # TODO: create input from keyboard
-    # input consists of two lines
-    # first line - n and m
-    # n - thread count 
-    # m - job count
     n = 0
     m = 0
 
-    # second line - data 
-    # data - contains m integers t(i) - the times in seconds it takes any thread to process i-th job
     data = []
 
-    # TODO: create the function
+    
     result = parallel_processing(n,m,data)
     
-    # TODO: print out the results, each pair in it's own line
+    
 
 
 
