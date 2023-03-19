@@ -2,8 +2,13 @@
 
 def parallel_processing(n, m, data):
     output = []
-    # TODO: write the function for simulating parallel tasks, 
-    # create the output pairs
+    nexthread = 0
+    numthread = [0] * n
+     for i in range(m):
+            nexthread=0
+            for j in range (1,n):
+                if numthread[j]<numthread[nexthread]:
+                    nextread = j
 
     return output
 
